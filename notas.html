@@ -1,45 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <meta charset="UTF-8">
+  <title>Exercício de Tabelas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fff;
+      margin: 30px;
+    }
 
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 8px 12px;
+    }
+
+    .titulo-tabela {
+      font-weight: bold;
+      background-color: #f0f0f0;
+    }
+
+    img {
+      width: 120px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .label {
+      font-weight: bold;
+    }
+  </style>
+</head>
 <body>
-     
-    <h1>Notas dos Alunos</h1>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Nome do Aluno</th>
-                <th>Web1</th>
-                <th>Web2</th>
-                <th>Projeto</th>
-                <th>Média</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Maria Silva</td>
-                <td>8.5</td>
-                <td>9.0</td>
-                <td>8.0</td>
-                <td>8.5</td>
-            </tr>
-            <tr>
-                <td>João Pereira</td>
-                <td>7.0</td>
-                <td>6.5</td>
-                <td>7.5</td>
-                <td>7.0</td>
-            </tr>
-            <tr>
-                <td>Ana Costa</td>
-                <td>9.0</td>
-                <td>8.5</td>
-                <td>9.5</td>
-                <td>9.0</td>
-                <table>
-            </tr>
-        </tbody>
-    </table>
+  <!-- Tabela 1: Histórico de Notas -->
+  <table>
+    <tr>
+      <th colspan="2" class="titulo-tabela">Aluno</th>
+    </tr>
+    <tr>
+      <td>João José da Silva</td>
+      <td>jjs@gmail.com</td>
+    </tr>
+    <tr>
+      <th colspan="2" class="titulo-tabela">Disciplinas</th>
+    </tr>
+    <tr>
+      <td>Introdução</td>
+      <td>8,0</td>
+    </tr>
+    <tr>
+      <td>Lógica</td>
+      <td>7,5</td>
+    </tr>
+    <tr>
+      <td>LP 1</td>
+      <td>7,0</td>
+    </tr>
+    <tr>
+      <th colspan="2">Histórico de Notas</th>
+    </tr>
+  </table>
+
+  <!-- Tabela 2: Carros -->
+  <table>
+    <tr>
+      <th colspan="4" class="titulo-tabela">Tabela de Carros</th>
+    </tr>
+    <tr>
+      <td class="label">Seminovos</td>
+      <td>Renault Duster</td>
+      <td>Hyundai Creta</td>
+      <td>Hyundai ix35</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R$ 66.500,00</td>
+      <td>R$ 77.700,00</td>
+      <td>R$ 99.550,00</td>
+    </tr>
+    <tr>
+      <td colspan="4">Visite nossa loja</td>
+    </tr>
+  </table>
+
+  <!-- Tabela 3: Tartarugas Ninja com imagens locais -->
+  <table>
+    <tr>
+      <td><img src="MichelangeloOriginal.webp" alt="Michelangelo"></td>
+      <td><img src="DonatelloOriginal.png" alt="Donatello"></td>
+    </tr>
+    <tr>
+      <td>Michelangelo</td>
+      <td>Donatello</td>
+    </tr>
+    <tr>
+      <td><img src="RaphaelOriginal.webp" alt="Raphael"></td>
+      <td><img src="LeonardoOriginal.webp" alt="Leonardo"></td>
+    </tr>
+    <tr>
+      <td>Raphael</td>
+      <td>Leonardo</td>
+    </tr>
+  </table>
+
 </body>
 </html>
