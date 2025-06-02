@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal de Inscrição de Eventos</title>
+</head>
+<body>
+    <h1>Portal de Inscrição de Eventos</h1>
+
+    <h2>Próximos Eventos</h2>
+    <table border="1">
+        <tr>
+            <th>Nome do Evento</th>
+            <th>Data</th>
+            <th>Local</th>
+            <th>Palestrante(s)</th>
+            <th>Vagas Disponíveis</th>
+        </tr>
+        <tr>
+            <td>Introdução ao HTML</td>
+            <td>28/05/2025</td>
+            <td>Auditório A</td>
+            <td>João Silva</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Design com CSS</td>
+            <td>28/05/2025</td>
+            <td>Sala A-15</td>
+            <td>Maria Souza<br>José Lima</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Desenvolvimento Web com JS</td>
+            <td>29/05/2025</td>
+            <td>Laboratório de Informática 3</td>
+            <td>Antonio Oliveira</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+    <h2>Formulário de Inscrição</h2>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detalhes da Inscrição</legend>
+
+            <label for="evento">Evento Desejado:</label>
+            <select id="evento" name="evento">
+                <option>--Selecione o Evento--</option>
+                <option>Introdução ao HTML</option>
+                <option>Design com CSS</option>
+                <option>Desenvolvimento Web com JS</option>
+            </select><br><br>
+
+            <label>Nível de Experiência:</label><br>
+            <input type="radio" name="nivel" value="iniciante"> Iniciante<br>
+            <input type="radio" name="nivel" value="intermediario"> Intermediário<br>
+            <input type="radio" name="nivel" value="avancado"> Avançado<br><br>
+
+            <label>Interesses Adicionais:</label><br>
+            <input type="checkbox" name="interesses" value="networking"> Networking<br>
+            <input type="checkbox" name="interesses" value="material"> Material Complementar<br>
+            <input type="checkbox" name="interesses" value="certificado"> Certificado de Participação<br><br>
+
+            <label for="obs">Observações:</label><br>
+            <textarea id="obs" name="obs" rows="4" cols="40"></textarea>
+        </fieldset><br>
+
+        <input type="submit" value="Realizar Inscrição">
+        <input type="reset" value="Limpar Dados">
+    </form>
+</body>
+</html>
